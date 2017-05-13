@@ -1,1 +1,1 @@
-# ERC20 Boilerplate
+# Digix Interface Contract

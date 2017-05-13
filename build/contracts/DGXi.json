@@ -1,0 +1,524 @@
+{
+  "contract_name": "DGXi",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_spender",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "dgxAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_dgxiValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateDemurrageFee",
+      "outputs": [
+        {
+          "name": "_dgxValue",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "INITIAL_SUPPLY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "startingDate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_dgxValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "dgxToDgxi",
+      "outputs": [
+        {
+          "name": "_dgxiValue",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "dailyDemurragePerMg",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_dgxValue",
+          "type": "uint256"
+        },
+        {
+          "name": "_recipient",
+          "type": "address"
+        }
+      ],
+      "name": "depositDgx",
+      "outputs": [
+        {
+          "name": "_success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_dgxiValue",
+          "type": "uint256"
+        },
+        {
+          "name": "_recipient",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawDgx",
+      "outputs": [
+        {
+          "name": "_success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "name": "remaining",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_dgxiValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "dgxiToDgx",
+      "outputs": [
+        {
+          "name": "_dgxValue",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_dgxAddress",
+          "type": "address"
+        },
+        {
+          "name": "_dailyDemurrage",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "dgx",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "dgxi",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "dgx",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "dgxi",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdraw",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60a0604052600b60608190527f53696d706c65546f6b656e000000000000000000000000000000000000000000608090815261003e91600391906101b8565b506040805180820190915260038082527f53494d00000000000000000000000000000000000000000000000000000000006020909201918252610083916004916101b8565b5060126005556127106006556040805160608101825260218082527f446967697820476f6c6420496e666c6174696f6e6172792046656520546f6b65602083019081527f6e0000000000000000000000000000000000000000000000000000000000000092909301919091526100fb916007916101b8565b506040805180820190915260048082527f44475869000000000000000000000000000000000000000000000000000000006020909201918252610140916008916101b8565b5060096009556000600a55341561015357fe5b604051604080610d7d8339810160405280516020909101515b5b6006546000818155600160a060020a0333168152600160205260409020555b600c8054600160a060020a031916600160a060020a038416179055600d81905542600b555b5050610258565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101f957805160ff1916838001178555610226565b82800160010185558215610226579182015b8281111561022657825182559160200191906001019061020b565b5b50610233929150610237565b5090565b61025591905b80821115610233576000815560010161023d565b5090565b90565b610b16806102676000396000f300606060405236156100e05763ffffffff60e060020a60003504166306fdde0381146100e2578063095ea7b31461017257806315b356701461019357806318160ddd146101bf57806321af2a90146101e157806323b872dd146102065780632ff2e9dc1461022d578063313ce5671461024f5780633e3ff7b61461027157806346eea3a5146102935780635155d76e146102b857806370a08231146102da5780637ce6e5071461030857806395d89b411461033b578063a9059cbb146103cb578063b5c5cde1146103ec578063dd62ed3e1461041f578063fdee6c1114610453575bfe5b34156100ea57fe5b6100f2610478565b604080516020808252835181830152835191928392908301918501908083838215610138575b80518252602083111561013857601f199092019160209182019101610118565b505050905090810190601f1680156101645780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561017a57fe5b610191600160a060020a0360043516602435610506565b005b341561019b57fe5b6101a3610568565b60408051600160a060020a039092168252519081900360200190f35b34156101c757fe5b6101cf610577565b60408051918252519081900360200190f35b34156101e957fe5b6101cf60043561057d565b60408051918252519081900360200190f35b341561020e57fe5b610191600160a060020a03600435811690602435166044356105d1565b005b341561023557fe5b6101cf6106cb565b60408051918252519081900360200190f35b341561025757fe5b6101cf6106d1565b60408051918252519081900360200190f35b341561027957fe5b6101cf6106d7565b60408051918252519081900360200190f35b341561029b57fe5b6101cf6004356106dd565b60408051918252519081900360200190f35b34156102c057fe5b6101cf6106f9565b60408051918252519081900360200190f35b34156102e257fe5b6101cf600160a060020a03600435166106ff565b60408051918252519081900360200190f35b341561031057fe5b610327600435600160a060020a036024351661071e565b604080519115158252519081900360200190f35b341561034357fe5b6100f26107bd565b604080516020808252835181830152835191928392908301918501908083838215610138575b80518252602083111561013857601f199092019160209182019101610118565b505050905090810190601f1680156101645780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34156103d357fe5b610191600160a060020a036004351660243561084b565b005b34156103f457fe5b610327600435600160a060020a0360243516610907565b604080519115158252519081900360200190f35b341561042757fe5b6101cf600160a060020a03600435811690602435166109c9565b60408051918252519081900360200190f35b341561045b57fe5b6101cf6004356109f6565b60408051918252519081900360200190f35b6007805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156104fe5780601f106104d3576101008083540402835291602001916104fe565b820191906000526020600020905b8154815290600101906020018083116104e157829003601f168201915b505050505081565b600160a060020a03338116600081815260026020908152604080832094871680845294825291829020859055815185815291517f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b9259281900390910190a35b5050565b600c54600160a060020a031681565b60005481565b600060006000600061059142600b54610a12565b92506105a08362015180610a2b565b91506105c36105b286620f4240610a2b565b6105be600d5485610a6e565b610a6e565b90508093505b505050919050565b600160a060020a038084166000908152600260209081526040808320338516845282528083205493861683526001909152902054610615908363ffffffff610a9d16565b600160a060020a03808516600090815260016020526040808220939093559086168152205461064a908363ffffffff610a1216565b600160a060020a038516600090815260016020526040902055610673818363ffffffff610a1216565b600160a060020a03808616600081815260026020908152604080832033861684528252918290209490945580518681529051928716939192600080516020610acb833981519152929181900390910190a35b50505050565b600a5481565b60095481565b600b5481565b60006106f1826106ec8461057d565b610a9d565b90505b919050565b600d5481565b600160a060020a0381166000908152600160205260409020545b919050565b6000600061072b846106dd565b600160a060020a0384166000908152600160205260409020549091506107519082610a9d565b600160a060020a038085166000818152600160209081526040918290209490945580518881529384018590528051919333909316927fdcbc1c05240f31ff3ad067ef1ee35ce4997762752e3a095284754544f4c709d7929081900390910190a3600191505b5092915050565b6008805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156104fe5780601f106104d3576101008083540402835291602001916104fe565b820191906000526020600020905b8154815290600101906020018083116104e157829003601f168201915b505050505081565b6040604436101561085c5760006000fd5b600160a060020a033316600090815260016020526040902054610885908363ffffffff610a1216565b600160a060020a0333811660009081526001602052604080822093909355908516815220546108ba908363ffffffff610a9d16565b600160a060020a03808516600081815260016020908152604091829020949094558051868152905191933390931692600080516020610acb83398151915292918290030190a35b5b505050565b600160a060020a0333166000908152600160205260408120548190849010156109305760006000fd5b610939846109f6565b600160a060020a03331660009081526001602052604090205490915061095f9085610a12565b600160a060020a0333811660008181526001602090815260409182902094909455805185815293840188905280519287169391927ff341246adaac6f497bc2a656f546ab9e182111d630394f0c57c710a59a2cb5679281900390910190a3600191505b5092915050565b600160a060020a038083166000908152600260209081526040808320938516835292905220545b92915050565b60006106f182610a058461057d565b610a12565b90505b919050565b6000610a2083831115610ab9565b508082035b92915050565b60006000610a3b60008411610ab9565b8284811515610a4657fe5b049050610a638385811515610a5757fe5b06828502018514610ab9565b8091505b5092915050565b6000828202610a63841580610a8d5750838583811515610a8a57fe5b04145b610ab9565b8091505b5092915050565b6000828201610a6384821015610ab9565b8091505b5092915050565b801515610ac65760006000fd5b5b505600ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3efa165627a7a72305820f8408ae0c62981b7ee4f520865c050029ef4e9c9d96ad9f61c2d9cb67fdfbd7a0029",
+  "networks": {
+    "1494677053502": {
+      "events": {
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        },
+        "0xdcbc1c05240f31ff3ad067ef1ee35ce4997762752e3a095284754544f4c709d7": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "dgx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "dgxi",
+              "type": "uint256"
+            }
+          ],
+          "name": "Deposit",
+          "type": "event"
+        },
+        "0xf341246adaac6f497bc2a656f546ab9e182111d630394f0c57c710a59a2cb567": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "dgx",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "dgxi",
+              "type": "uint256"
+            }
+          ],
+          "name": "Withdraw",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd9a4b679fff1ec60b01812b174e1ed8343ef06cc",
+      "updated_at": 1494710043392
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1494710885660
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@digix/dgx-note",
+  "name": "@digix/dgxi",
   "version": "0.0.1",
   "description": "Digix Note Wrapper Contract",
   "author": "DigixGlobal",
@@ -24,6 +24,7 @@
     "eslint-plugin-react": "^6.7.1"
   },
   "dependencies": {
+    "@digix/core2": "0.0.1",
     "awaiting": "^2.2.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
